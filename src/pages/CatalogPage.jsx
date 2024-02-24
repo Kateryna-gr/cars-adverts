@@ -1,5 +1,13 @@
+import FilterBar from 'components/FilterBar/FilterBar';
+import AdvertsList from 'components/AdvertsList/AdvertsList';
+
 const CatalogPage = () => {
-  return <h2>Catalog</h2>;
+  return (
+    <div>
+      <FilterBar />
+      <AdvertsList />
+    </div>
+  );
 };
 
 export default CatalogPage;

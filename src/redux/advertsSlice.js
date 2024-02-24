@@ -6,6 +6,12 @@ const advertsSlice = createSlice({
   initialState: {
     cars: [],
     carDetails: {},
+    filters: {
+      brand: null,
+      price: null,
+      mileageMin: null,
+      mileageMax: null,
+    },
     isLoading: false,
     error: null,
   },

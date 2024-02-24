@@ -1,5 +1,13 @@
+import FilterBar from 'components/FilterBar/FilterBar';
+import AdvertsList from 'components/AdvertsList/AdvertsList';
+
 const FavoritesPage = () => {
-  return <h2>Favorites</h2>;
+  return (
+    <div>
+      <FilterBar />
+      <AdvertsList />
+    </div>
+  );
 };
 
 export default FavoritesPage;
