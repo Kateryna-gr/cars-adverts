@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cars-adverts/static/css/main.cd2e038f.css",
-    "main.js": "/cars-adverts/static/js/main.7d4d8254.js",
-    "static/js/206.d508f3c8.chunk.js": "/cars-adverts/static/js/206.d508f3c8.chunk.js",
-    "index.html": "/cars-adverts/index.html",
-    "main.cd2e038f.css.map": "/cars-adverts/static/css/main.cd2e038f.css.map",
-    "main.7d4d8254.js.map": "/cars-adverts/static/js/main.7d4d8254.js.map",
-    "206.d508f3c8.chunk.js.map": "/cars-adverts/static/js/206.d508f3c8.chunk.js.map"
+    "main.css": "/Kateryna-gr/cars-adverts/static/css/main.cd2e038f.css",
+    "main.js": "/Kateryna-gr/cars-adverts/static/js/main.e355c176.js",
+    "static/js/206.d508f3c8.chunk.js": "/Kateryna-gr/cars-adverts/static/js/206.d508f3c8.chunk.js",
+    "index.html": "/Kateryna-gr/cars-adverts/index.html",
+    "main.cd2e038f.css.map": "/Kateryna-gr/cars-adverts/static/css/main.cd2e038f.css.map",
+    "main.e355c176.js.map": "/Kateryna-gr/cars-adverts/static/js/main.e355c176.js.map",
+    "206.d508f3c8.chunk.js.map": "/Kateryna-gr/cars-adverts/static/js/206.d508f3c8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.7d4d8254.js"
+    "static/js/main.e355c176.js"
   ]
 }
