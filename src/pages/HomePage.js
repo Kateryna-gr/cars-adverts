@@ -1,5 +1,4 @@
-import { LinkNav } from 'components/AuthNav/AuthNav.styled';
-import { useAuth } from 'redux/auth/useAuthHook';
+// import { useAuth } from 'redux/auth/useAuthHook';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -9,34 +8,23 @@ const Container = styled.div`
     justifyContent: 'center',
   `;
 
-const LinkText = styled.div`
-  width: 350px;
-  margin: 0 auto;
-`;
+// const LinkText = styled.div`
+//   width: 350px;
+//   margin: 0 auto;
+// `;
 
 const Title = styled.h1`
     fontWeight: 460,
     fontSize: 48,
 `;
 
-export default function Home() {
-  const { isLoggedIn } = useAuth();
+const HomePage = () => {
+  // const { isLoggedIn } = useAuth();
 
   return (
     <Container>
-      <Title>Welcome to contacts book</Title>
-      {isLoggedIn ? (
-        <LinkText>
-          Return to your saved
-          <LinkNav to="/contacts">Contacts</LinkNav>
-        </LinkText>
-      ) : (
-        <LinkText>
-          <LinkNav to="/register">Register</LinkNav> or
-          <LinkNav to="/login">Log In</LinkNav>
-          to save your contacts
-        </LinkText>
-      )}
+      <Title>Welcome to cars adverts site</Title>
     </Container>
   );
-}
+};
+export default HomePage;
