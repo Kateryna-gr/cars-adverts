@@ -11,7 +11,7 @@ const NotFoundPage = () => {
   return (
     <Container>
       <div>
-        This page doesn't exist! Return to
+        This page doesn't exist! Return to {" "}
         <NavLink to="/">Home page</NavLink>
       </div>
     </Container>

@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Suspense, lazy } from 'react';
-// import { PhonebookBar } from './PhonebookBar/PhonebookBar';
+import { Suspense } from 'react';
 
 const Layout = () => {
   return (
