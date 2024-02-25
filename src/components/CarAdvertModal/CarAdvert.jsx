@@ -26,14 +26,11 @@ const CarAdvert = ({ car, closeModal }) => {
         </svg>
       </ItemIcon>
       <ItemImage image={car.img} />
-
       <ItemTitleWrapper>
         {car.make} <ItemTitleModel>{car.model}</ItemTitleModel>
         {', '} {car.year}
       </ItemTitleWrapper>
       <ItemDetailsWrapper>
-        {/* <ItemDetail>{city}</ItemDetail>
-          <ItemDetail>{country}</ItemDetail> */}
         <ItemDetail>Id: {car.id}</ItemDetail>
         <ItemDetail>Year: {car.year}</ItemDetail>
         <ItemDetail>Type: {car.type}</ItemDetail>
@@ -70,7 +67,7 @@ const CarAdvert = ({ car, closeModal }) => {
         </ItemConditionWrapper>
         <ItemConditionWrapper>
           <ItemConditionTitle>
-            Mileage: <ItemConditionSpan>{car.mileage}</ItemConditionSpan>
+            Mileage: <ItemConditionSpan>{car.mileage / 1000}</ItemConditionSpan>
           </ItemConditionTitle>
         </ItemConditionWrapper>
         <ItemConditionWrapper>

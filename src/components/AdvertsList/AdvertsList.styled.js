@@ -39,8 +39,8 @@ export const ItemIcon = styled.div`
 
   &.active,
   &:hover {
-    fill: var(--accent-color);
-    stroke: var(--accent-color);
+    fill: var(--accentColor);
+    stroke: var(--accentColor);
     cursor: pointer;
   }
 `;
@@ -57,7 +57,7 @@ export const ItemTitleWrapper = styled.div`
 `;
 
 export const ItemTitleModel = styled.span`
-  color: var(--accent-color);
+  color: var(--accentColor);
 `;
 
 export const ItemTitlePrice = styled.span`
@@ -117,7 +117,7 @@ export const ItemButton = styled.button`
   padding: 12px 99px;
   width: 274px;
   height: 44px;
-  background: var(--accent-color);
+  background: var(--accentColor);
   margin-bottom: 0;
 
   font-family: var(--font-family);
@@ -128,7 +128,7 @@ export const ItemButton = styled.button`
 
   &:hover,
   &:focus {
-    background: var(--accent-hover-color);
+    background: var(--accentHoverColor);
     cursor: pointer;
   }
 `;
@@ -148,11 +148,11 @@ export const LoadMoreButton = styled.button`
   line-height: 20px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: var(--accent-color);
+  color: var(--accentColor);
 
   &:hover,
   &:focus {
-    color: var(--accent-hover-color);
+    color: var(--accentHoverColor);
     cursor: pointer;
   }
 `;

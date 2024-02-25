@@ -6,7 +6,7 @@ export const StyledForm = styled(Form)`
   gap: 18px;
   width: 859px;
   height: 74px;
-  margin: 150px auto 50px;
+  margin: 100px auto 50px;
 `;
 
 export const StyledTitle = styled.p`
@@ -69,7 +69,7 @@ export const Button = styled.button`
   width: 136px;
   height: 48px;
   border: none;
-  background: var(--accent-color);
+  background: var(--accentColor);
   margin-top: auto;
 
   font-family: var(--font-family);
@@ -80,7 +80,7 @@ export const Button = styled.button`
 
   &:hover,
   &:focus {
-    background: var(--accent-hover-color);
+    background: var(--accentHoverColor);
     cursor: pointer;
   }
 `;

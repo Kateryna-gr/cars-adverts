@@ -9,8 +9,8 @@ export const GlobalStyle = createGlobalStyle`
   --conditionTextColor: #363535;
   --conditionBgColor: #f9f9f9;
   --whiteColor: #fff;
-  --accent-color: #3470ff;
-  --accent-hover-color: #0b44cd;
+  --accentColor: #3470ff;
+  --accentHoverColor: #0b44cd;
   --filterTitleColor: #8a8a89;
   --filterBackground: #f7f7fb;
   --filterUnactiveColor: rgba(18, 20, 23, 0.2);

@@ -15,10 +15,6 @@ export const ModalContainer = styled(Modal)`
   transform: translate(-50%, 0);
   padding: 0%;
   z-index: 1000;
-
-  &.ReactModal__Overlay--after-open {
-    backround-color: var(--secondaryTextColor);
-  }
 `;
 
 export const AdvertContainer = styled.div`
@@ -59,8 +55,8 @@ export const ItemIcon = styled.div`
 
   &.active,
   &:hover {
-    fill: var(--accent-color);
-    stroke: var(--accent-color);
+    fill: var(--accentColor);
+    stroke: var(--accentColor);
     cursor: pointer;
   }
 `;
@@ -78,7 +74,7 @@ export const ItemTitleWrapper = styled.div`
 `;
 
 export const ItemTitleModel = styled.span`
-  color: var(--accent-color);
+  color: var(--accentColor);
 `;
 
 export const ItemDetailsWrapper = styled.div`
@@ -175,7 +171,7 @@ export const ItemConditionTitle = styled.span`
 
 export const ItemConditionSpan = styled.span`
   font-weight: 600;
-  color: var(--accent-color);
+  color: var(--accentColor);
 `;
 
 export const ItemButton = styled.button`
@@ -184,7 +180,7 @@ export const ItemButton = styled.button`
   padding: 12px 50px;
   width: 168px;
   height: 44px;
-  background: var(--accent-color);
+  background: var(--accentColor);
 
   font-family: var(--font-family);
   font-weight: 600;
@@ -194,7 +190,7 @@ export const ItemButton = styled.button`
 
   &:hover,
   &:focus {
-    background: var(--accent-hover-color);
+    background: var(--accentHoverColor);
     cursor: pointer;
   }
 `;
@@ -209,4 +205,3 @@ export const ButtonTel = styled.a`
     cursor: pointer;
   }
 `;
-

@@ -8,13 +8,13 @@ export const selectIsLoading = state => state.adverts.isLoading;
 
 export const selectError = state => state.adverts.error;
 
-export const selectFilterBrand = state => state.adverts.filters.brand;
+export const selectFilterBrand = state => state.adverts.filterBrand;
 
-export const selectFilterPrice = state => state.adverts.filters.price;
+export const selectFilterPrice = state => state.adverts.filterPrice;
 
-export const selectFilterMileageMin = state => state.adverts.filters.mileageMin;
+export const selectFilterMileageMin = state => state.adverts.filterMileageMin;
 
-export const selectFilterMileageMax = state => state.adverts.filters.mileageMax;
+export const selectFilterMileageMax = state => state.adverts.filterMileageMax;
 
 export const selectCurrentCars = createSelector(
   [

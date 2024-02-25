@@ -8,8 +8,8 @@ const Container = styled.div`
     justifyContent: 'center',
   `;
 
-const Title = styled.h1`
-    fontWeight: 460,
+const Title = styled.h2`
+    font-family: var(--font-family);
     fontSize: 48,
 `;
 
