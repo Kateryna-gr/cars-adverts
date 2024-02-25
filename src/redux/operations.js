@@ -29,8 +29,8 @@ export const addToFav = createAsyncThunk(
   'adverts/addToFav',
   async (id, { rejectWithValue }) => {
     try {
-      const { data } = await getAllCars();
-      return { data, id };
+      // const { data } = await getAllCars();
+      return id;
     } catch (error) {
       return rejectWithValue(error.message);
     }

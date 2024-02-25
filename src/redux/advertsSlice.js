@@ -40,8 +40,8 @@ const advertsSlice = createSlice({
       .addCase(addToFav.fulfilled, (state, { payload }) => {
         state.isLoading = false;
         state.error = null;
-        const { data, id } = payload;
-        const car = data.find(car => car.id === id);
+        const id = payload;
+        const car = state.cars.find(car => car.id === id);
         state.favorites.push(car);
       })
       .addCase(addToFav.rejected, (state, { payload }) => {

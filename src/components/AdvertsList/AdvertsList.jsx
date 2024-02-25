@@ -11,7 +11,8 @@ import { ListContainer, LoadMoreButton } from './AdvertsList.styled';
 import AdvertItem from './AdvertsItem';
 // import { addToFav, deleteFromFav } from 'redux/operations';
 
-const AdvertsList = ({ filterBrand }) => {
+const AdvertsList = () => {
+// const AdvertsList = ({ filterBrand }) => {
   const currentCars = useSelector(selectCars);
   // const favCars = useSelector(selectFavCars);
   const isLoading = useSelector(selectIsLoading);
