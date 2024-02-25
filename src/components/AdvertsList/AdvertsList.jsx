@@ -19,9 +19,15 @@ const AdvertsList = ({ filterBrand }) => {
 
   const dispatch = useDispatch();
 
+  let page = 1;
   useEffect(() => {
-    dispatch(getAllAdverts());
+    dispatch(getAllAdverts(1));
   }, [dispatch]);
+
+  const handleLoadMore = () => {
+    page++;
+    dispatch(getAllAdverts(page));
+  };
 
   // const handleAddToFav = id => {
   //   const isFav = favCars.findIndex(car => car.id === id);
@@ -48,7 +54,7 @@ const AdvertsList = ({ filterBrand }) => {
                 </li>
               ))}
           </ListContainer>
-          <LoadMoreButton>Load more</LoadMoreButton>
+          <LoadMoreButton onClick={handleLoadMore}>Load more</LoadMoreButton>
         </>
       ) : (
         <h5>No cars</h5>

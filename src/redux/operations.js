@@ -3,9 +3,9 @@ import { getAllCars, getOneCar } from 'services/api';
 
 export const getAllAdverts = createAsyncThunk(
   'adverts/getAllAdverts',
-  async (_, { rejectWithValue }) => {
+  async (page, { rejectWithValue }) => {
     try {
-      const { data } = await getAllCars();
+      const { data } = await getAllCars(page);
       return data;
     } catch (error) {
       return rejectWithValue(error.message);

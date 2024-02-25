@@ -12,7 +12,6 @@ export const ItemContainer = styled.div`
   width: 274px;
   height: 426px;
   position: relative;
-  cursor: pointer;
 `;
 
 export const ItemImage = styled.div`
@@ -54,6 +53,7 @@ export const ItemTitleWrapper = styled.div`
 
   height: 24px;
   margin-bottom: 8px;
+  cursor: pointer;
 `;
 
 export const ItemTitleModel = styled.span`
@@ -126,8 +126,7 @@ export const ItemButton = styled.button`
   line-height: 20px;
   color: var(--buttonTextColor);
 
-  &:hover,
-  &:focus {
+  &:hover {
     background: var(--accentHoverColor);
     cursor: pointer;
   }
@@ -150,8 +149,7 @@ export const LoadMoreButton = styled.button`
   text-decoration-skip-ink: none;
   color: var(--accentColor);
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: var(--accentHoverColor);
     cursor: pointer;
   }

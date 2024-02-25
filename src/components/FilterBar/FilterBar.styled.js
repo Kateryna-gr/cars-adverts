@@ -48,8 +48,13 @@ export const StyledField = styled(Field)`
   line-height: 20px;
   color: var(--primaryTextColor);
 
+  &.brand {
+    cursor: pointer;
+  }
+
   &.price {
     width: 125px;
+    cursor: pointer;
   }
 
   &.mileagemin {
@@ -78,8 +83,7 @@ export const Button = styled.button`
   line-height: 20px;
   color: var(--buttonTextColor);
 
-  &:hover,
-  &:focus {
+  &:hover {
     background: var(--accentHoverColor);
     cursor: pointer;
   }

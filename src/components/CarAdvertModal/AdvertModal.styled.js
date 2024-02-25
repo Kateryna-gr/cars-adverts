@@ -52,9 +52,9 @@ export const ItemIcon = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
+  cursor: pointer;
 
-  &.active,
-  &:hover {
+  &.active {
     fill: var(--accentColor);
     stroke: var(--accentColor);
     cursor: pointer;
@@ -188,8 +188,7 @@ export const ItemButton = styled.button`
   line-height: 20px;
   color: var(--buttonTextColor);
 
-  &:hover,
-  &:focus {
+  &:hover {
     background: var(--accentHoverColor);
     cursor: pointer;
   }
@@ -199,7 +198,6 @@ export const ButtonTel = styled.a`
   color: var(--buttonTextColor);
 
   &:hover,
-  &:focus,
   &:active {
     color: var(--buttonTextColor);
     cursor: pointer;

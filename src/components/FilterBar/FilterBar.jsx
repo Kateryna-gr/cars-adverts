@@ -46,7 +46,7 @@ const FilterBar = ({ setFilterBrand, onSelectChange }) => {
       <StyledForm>
         <label>
           <StyledTitle>Car brand</StyledTitle>
-          <StyledField as="select" name="brand">
+          <StyledField className="brand" as="select" name="brand">
             {brandNames.map(brand => (
               <StyledOption
                 key={brand}
