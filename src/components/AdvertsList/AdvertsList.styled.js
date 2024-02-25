@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ListContainer = styled.ul`
-  width: 1183px;
+  width: 1184px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -47,7 +47,7 @@ export const ItemTitleWrapper = styled.div`
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-  line-height: 18.24px;
+  line-height: 24px;
   color: var(--primaryTextColor);
 
   height: 24px;
@@ -58,20 +58,37 @@ export const ItemTitleModel = styled.span`
   color: var(--accent-color);
 `;
 
+export const ItemTitlePrice = styled.span`
+  position: absolute;
+  right: 0;
+`;
+
 export const ItemDetailsWrapper = styled.div`
-  max-height: 40px;
+  height: 40px;
   margin-bottom: 28px;
 
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  row-gap: 4px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 274px;
+    height: 28px;
+    background: white;
+  }
 `;
 
 export const ItemDetail = styled.p`
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 13.68px;
+  line-height: 18px;
   color: var(--secondaryTextColor);
   position: relative;
 
@@ -81,6 +98,14 @@ export const ItemDetail = styled.p`
     left: calc(100% + 6px);
     height: 16px;
     border: 1px solid var(--secondaryTextColor);
+  }
+
+  &:last-child::after {
+    content: '';
+    position: absolute;
+    left: calc(100% + 6px);
+    height: 0;
+    border: none;
   }
 `;
 
@@ -96,12 +121,36 @@ export const ItemButton = styled.button`
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
-  line-height: 15.96px;
+  line-height: 20px;
   color: var(--buttonTextColor);
 
   &:hover,
   &:focus {
     background: var(--accent-hover-color);
+    cursor: pointer;
+  }
+`;
+
+export const LoadMoreButton = styled.button`
+  display: block;
+  border: none;
+  background: none;
+  width: 120px;
+  height: 44px;
+  padding: 10px 20px;
+  margin: 100px auto 150px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-hover-color);
     cursor: pointer;
   }
 `;

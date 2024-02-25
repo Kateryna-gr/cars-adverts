@@ -5,6 +5,7 @@ import {
   ItemIcon,
   ItemTitleWrapper,
   ItemTitleModel,
+  ItemTitlePrice,
   ItemDetailsWrapper,
   ItemDetail,
   ItemButton,
@@ -24,12 +25,9 @@ const AdvertItem = ({ car }) => {
           </svg>
         </ItemIcon>
         <ItemTitleWrapper>
-          {car.make}{' '}
-          <ItemTitleModel>
-            {car.model}
-            {', '}
-          </ItemTitleModel>
-          {car.rentalPrice}
+          {car.make} <ItemTitleModel>{car.model}</ItemTitleModel>
+          {', '} {car.year}
+          <ItemTitlePrice>{car.rentalPrice}</ItemTitlePrice>
         </ItemTitleWrapper>
         <ItemDetailsWrapper>
           <ItemDetail>{city}</ItemDetail>
@@ -40,6 +38,7 @@ const AdvertItem = ({ car }) => {
           <ItemDetail>{car.id}</ItemDetail>
           <ItemDetail>{car.accessories[0]}</ItemDetail>
         </ItemDetailsWrapper>
+
         <ItemButton>Learn more</ItemButton>
       </ItemContainer>
     </>

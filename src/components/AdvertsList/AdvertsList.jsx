@@ -6,7 +6,7 @@ import {
   selectCars,
 } from '../../redux/selectors';
 import { getAllAdverts } from '../../redux/operations';
-import { ListContainer } from './AdvertsList.styled';
+import { ListContainer, LoadMoreButton } from './AdvertsList.styled';
 import AdvertItem from './AdvertsItem';
 
 const AdvertsList = () => {
@@ -24,13 +24,16 @@ const AdvertsList = () => {
       {isLoading && <h5>Loading...</h5>}
       {error && <h5>Error...</h5>}
       {currentCars?.length ? (
-        <ListContainer>
-          {currentCars.map(car => (
-            <li key={car.id}>
-              <AdvertItem car={car} />
-            </li>
-          ))}
-        </ListContainer>
+        <>
+          <ListContainer>
+            {currentCars.map(car => (
+              <li key={car.id}>
+                <AdvertItem car={car} />
+              </li>
+            ))}
+          </ListContainer>
+          <LoadMoreButton>Load more</LoadMoreButton>
+        </>
       ) : (
         <h5>No cars</h5>
       )}

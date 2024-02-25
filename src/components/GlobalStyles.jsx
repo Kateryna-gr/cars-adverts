@@ -6,6 +6,8 @@ export const GlobalStyle = createGlobalStyle`
   --font-family: "Manrope", sans-serif;
   --primaryTextColor:  #121417;
   --secondaryTextColor: rgba(18, 20, 23, 0.5);
+  --conditionTextColor: #363535;
+  --conditionBgColor: #f9f9f9;
   --accent-color: #3470ff;
   --accent-hover-color: #0b44cd;
   --filterTitleColor: #8a8a89;
