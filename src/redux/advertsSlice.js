@@ -16,6 +16,12 @@ const advertsSlice = createSlice({
     error: null,
   },
 
+  reducers: {
+    changeFilterBrand(state, { payload }) {
+      state.filters.brand = payload;
+    },
+  },
+
   extraReducers: builder => {
     builder
       .addCase(getAllAdverts.pending, state => {
@@ -61,5 +67,7 @@ const advertsSlice = createSlice({
       });
   },
 });
+
+export const { changeFilterBrand } = advertsSlice.actions;
 
 export const advertsReducer = advertsSlice.reducer;

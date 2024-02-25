@@ -19,6 +19,20 @@ export const StyledTitle = styled.p`
   margin-bottom: 8px;
 `;
 
+export const StyledOption = styled.option`
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--filterUnactiveColor);
+  height: 20px;
+  margin-bottom: 8px;
+
+  &:hover {
+    color: var(--filterTitleColor);
+  }
+`;
+
 export const StyledField = styled(Field)`
   border-radius: 14px;
   padding: 14px 14px 14px 18px;
@@ -26,6 +40,13 @@ export const StyledField = styled(Field)`
   height: 48px;
   border: none;
   background: var(--filterBackground);
+  position: relative;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--primaryTextColor);
 
   &.price {
     width: 125px;
