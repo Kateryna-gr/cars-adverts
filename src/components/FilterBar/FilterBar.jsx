@@ -9,7 +9,7 @@ import {
 } from './FilterBar.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectCars, selectFilterBrand } from 'redux/selectors';
-import { changeFilterBrand } from 'redux/filterSlice';
+import { changeFilterBrand } from 'redux/advertsSlice';
 
 const FilterBar = () => {
   const allCars = useSelector(selectCars);
