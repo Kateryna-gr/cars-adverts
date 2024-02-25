@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   --accent-color: #3470ff;
   --accent-hover-color: #0b44cd;
   --filterTitleColor: #8a8a89;
+  --filterBackground: #f7f7fb;
   --filterUnactiveColor: rgba(18, 20, 23, 0.2);
   --buttonTextColor: #fff;
 }
