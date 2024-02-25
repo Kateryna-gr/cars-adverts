@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const ListContainer = styled.ul`
-  width: 1184px;
+  width: 1183px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 29px;
   row-gap: 50px;
 `;
 
@@ -12,6 +12,7 @@ export const ItemContainer = styled.div`
   width: 274px;
   height: 426px;
   position: relative;
+  cursor: pointer;
 `;
 
 export const ItemImage = styled.div`
@@ -21,6 +22,7 @@ export const ItemImage = styled.div`
 
   background-image: ${props => props.image !== '' && `url("${props.image}")`};
   background-size: cover;
+  background-position: center;
 `;
 
 export const ItemIcon = styled.div`
@@ -29,7 +31,7 @@ export const ItemIcon = styled.div`
   fill: none;
   stroke-width: 1.5px;
   stroke-opacity: 0.8;
-  stroke: var(--buttonTextColor);
+  stroke: var(--whiteColor);
 
   position: absolute;
   top: 14px;
@@ -80,7 +82,7 @@ export const ItemDetailsWrapper = styled.div`
     top: 40px;
     width: 274px;
     height: 28px;
-    background: white;
+    background: var(--whiteColor);
   }
 `;
 

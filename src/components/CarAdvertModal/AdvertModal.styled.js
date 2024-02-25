@@ -1,11 +1,33 @@
 import styled from 'styled-components';
+import Modal from 'react-modal';
 
-export const ModalContainer = styled.div`
+export const ModalContainer = styled(Modal)`
   border-radius: 24px;
   width: 541px;
-  height: 752px;
+  min-height: 752px;
+  position: relative;
+  border: none;
+  backround-color: red;
+
+  top: -150px;
+  left: 50%;
+  bottom: 150px;
+  transform: translate(-50%, 0);
+  padding: 0%;
+  z-index: 1000;
+
+  &.ReactModal__Overlay--after-open {
+    backround-color: var(--secondaryTextColor);
+  }
+`;
+
+export const AdvertContainer = styled.div`
+  border-radius: 24px;
+  width: 541px;
+  min-height: 752px;
   padding: 40px;
-  background: var(--buttonTextColor);
+  border: none;
+  background: var(--whiteColor);
   position: relative;
 `;
 
@@ -16,6 +38,7 @@ export const ItemImage = styled.div`
 
   background-image: ${props => props.image !== '' && `url("${props.image}")`};
   background-size: cover;
+  background-position: center;
 `;
 
 export const ItemIcon = styled.div`
@@ -23,6 +46,7 @@ export const ItemIcon = styled.div`
   height: 24px;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   fill: none;
   stroke-width: 1.5px;
@@ -58,7 +82,8 @@ export const ItemTitleModel = styled.span`
 `;
 
 export const ItemDetailsWrapper = styled.div`
-  height: 40px;
+  min-height: 40px;
+  width: 400px;
   margin-bottom: 14px;
 
   display: flex;
@@ -68,24 +93,13 @@ export const ItemDetailsWrapper = styled.div`
   position: relative;
 
   &.accessories {
-    height: 18px;
+    min-height: 18px;
     margin-bottom: 4px;
-
   }
 
-  &.functionalities{
-    height: 18px;
+  &.functionalities {
+    min-height: 18px;
     margin-bottom: 0;
-
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 18px;
-      width: 461px;
-      height: 24px;
-      background: white;
-    }
   }
 `;
 
@@ -105,7 +119,6 @@ export const ItemDetail = styled.p`
     border: 1px solid var(--secondaryTextColor);
   }
 
-  
   &:last-child::after {
     content: '';
     position: absolute;
@@ -122,7 +135,7 @@ export const ItemDescr = styled.div`
   line-height: 20px;
   color: var(--primaryTextColor);
 
-  height: 40px;
+  min-height: 40px;
 `;
 
 export const ItemAccessoriesTitle = styled.div`
@@ -185,3 +198,15 @@ export const ItemButton = styled.button`
     cursor: pointer;
   }
 `;
+
+export const ButtonTel = styled.a`
+  color: var(--buttonTextColor);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--buttonTextColor);
+    cursor: pointer;
+  }
+`;
+
