@@ -6,19 +6,18 @@ const advertsSlice = createSlice({
   initialState: {
     cars: [],
     favorites: [],
-    filters: {
-      brand: null,
-      price: null,
-      mileageMin: null,
-      mileageMax: null,
-    },
+    filterBrand: '',
+    filterPrice: '',
+    filterMileageMin: '',
+    filterMileageMax: '',
     isLoading: false,
     error: null,
   },
 
   reducers: {
     changeFilterBrand(state, { payload }) {
-      state.filters.brand = payload;
+      console.log(payload);
+      state.filterBrand = payload;
     },
   },
 

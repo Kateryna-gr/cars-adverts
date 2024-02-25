@@ -6,14 +6,11 @@ import {
   StyledOption,
   StyledTitle,
 } from './FilterBar.styled';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { selectCars } from 'redux/selectors';
-import { changeFilterBrand } from 'redux/advertsSlice';
 
-const FilterBar = () => {
+const FilterBar = ({ setFilterBrand, onSelectChange }) => {
   const allCars = useSelector(selectCars);
-  // const filterBrand = useSelector(selectFilterBrand);
-  // console.log(filterBrand);
 
   const brandNames = [];
   allCars.map(car => brandNames.push(car.make));
@@ -38,14 +35,12 @@ const FilterBar = () => {
     }
   }
 
-  const dispatch = useDispatch();
-
   return (
     <Formik
       initialValues={{ brand: '', price: '', mileageMin: '', mileageMax: '' }}
       onSubmit={(values, actions) => {
-        // console.log(values);
-        dispatch(changeFilterBrand(values.brand));
+        console.log(values);
+        setFilterBrand(values.brand);
       }}
     >
       <StyledForm>
@@ -53,7 +48,12 @@ const FilterBar = () => {
           <StyledTitle>Car brand</StyledTitle>
           <StyledField as="select" name="brand">
             {brandNames.map(brand => (
-              <StyledOption key={brand} name="brand" value={brand}>
+              <StyledOption
+                key={brand}
+                name="brand"
+                value={brand}
+                onClick={onSelectChange}
+              >
                 {brand}
               </StyledOption>
             ))}
