@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { getAllAdverts, getCarDetails } from './operations';
+import { getAllAdverts, addToFav, deleteFromFav } from './operations';
 
 const advertsSlice = createSlice({
   name: 'adverts',
   initialState: {
     cars: [],
-    carDetails: {},
+    favorites: [],
     filters: {
       brand: null,
       price: null,
@@ -30,15 +30,32 @@ const advertsSlice = createSlice({
         state.isLoading = false;
         state.error = payload;
       })
-      .addCase(getCarDetails.pending, state => {
+      .addCase(addToFav.pending, state => {
         state.isLoading = true;
       })
-      .addCase(getCarDetails.fulfilled, (state, { payload }) => {
+      .addCase(addToFav.fulfilled, (state, { payload }) => {
         state.isLoading = false;
         state.error = null;
-        state.carDetails = payload;
+        const { data, id } = payload;
+        const car = data.find(car => car.id === id);
+        console.log(car);
+        state.favorites.push(car);
       })
-      .addCase(getCarDetails.rejected, (state, { payload }) => {
+      .addCase(addToFav.rejected, (state, { payload }) => {
+        state.isLoading = false;
+        state.error = payload;
+      })
+      .addCase(deleteFromFav.pending, state => {
+        state.isLoading = true;
+      })
+      .addCase(deleteFromFav.fulfilled, (state, { payload }) => {
+        state.isLoading = false;
+        state.error = null;
+        const id = payload;
+        const index = state.favorites.findIndex(car => car.id === id);
+        state.favorites.splice(index, 1);
+      })
+      .addCase(deleteFromFav.rejected, (state, { payload }) => {
         state.isLoading = false;
         state.error = payload;
       });

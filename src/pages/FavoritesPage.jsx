@@ -1,11 +1,12 @@
 import FilterBar from 'components/FilterBar/FilterBar';
-import AdvertsList from 'components/AdvertsList/AdvertsList';
+import AdvertsFavList from 'components/AdvertsList/AdvertFavList';
+
 
 const FavoritesPage = () => {
   return (
     <div>
       <FilterBar />
-      <AdvertsList />
+      <AdvertsFavList />
     </div>
   );
 };

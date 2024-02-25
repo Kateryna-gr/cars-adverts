@@ -9,7 +9,7 @@ export const ModalContainer = styled(Modal)`
   border: none;
   backround-color: red;
 
-  top: -150px;
+  top: 50px;
   left: 50%;
   bottom: 150px;
   transform: translate(-50%, 0);

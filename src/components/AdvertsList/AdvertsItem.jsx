@@ -15,26 +15,27 @@ import {
 import AdvertModal from 'components/CarAdvertModal/AdvertModal';
 
 const AdvertItem = ({ car }) => {
+// const AdvertItem = ({ car, handleAddToFav }) => {
   const address = car.address.split(', ');
   const country = address[address.length - 1];
   const city = address[address.length - 2];
 
   const [isOpen, setIsOpen] = useState(false);
-
   const openModal = () => {
     setIsOpen(true);
   };
 
   return (
     <>
-      <ItemContainer onClick={openModal}>
+      <ItemContainer>
         <ItemImage image={car.img} />
         <ItemIcon>
+          {/* <ItemIcon onClick={handleAddToFav(car.id)}> */}
           <svg width="18" height="18">
             <use href={`${icon}#heart`}></use>
           </svg>
         </ItemIcon>
-        <ItemTitleWrapper>
+        <ItemTitleWrapper onClick={openModal}>
           {car.make} <ItemTitleModel>{car.model}</ItemTitleModel>
           {', '} {car.year}
           <ItemTitlePrice>{car.rentalPrice}</ItemTitlePrice>

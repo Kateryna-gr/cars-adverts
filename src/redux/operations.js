@@ -24,3 +24,27 @@ export const getCarDetails = createAsyncThunk(
     }
   }
 );
+
+export const addToFav = createAsyncThunk(
+  'adverts/addToFav',
+  async (id, { rejectWithValue }) => {
+    try {
+      const { data } = await getAllCars();
+      return { data, id };
+    } catch (error) {
+      return rejectWithValue(error.message);
+    }
+  }
+);
+
+export const deleteFromFav = createAsyncThunk(
+  'adverts/deleteFromFav',
+  async (id, { rejectWithValue }) => {
+    try {
+      // const { data } = await getAllCars();
+      return id;
+    } catch (error) {
+      return rejectWithValue(error.message);
+    }
+  }
+);
