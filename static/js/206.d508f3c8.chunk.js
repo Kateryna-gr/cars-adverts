@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[206],{206:function(e,n,t){t.r(n);var c,r,i=t(168),a=t(867),s=t(184),l=a.ZP.div(c||(c=(0,i.Z)(["\n    minHeight: 'calc(100vh - 50px)',\n    display: 'flex',\n    alignItems: 'center',\n    justifyContent: 'center',\n  "]))),h=a.ZP.h1(r||(r=(0,i.Z)(["\n    fontWeight: 460,\n    fontSize: 48,\n"])));n.default=function(){return(0,s.jsx)(l,{children:(0,s.jsx)(h,{children:"Welcome to cars adverts site"})})}}}]);
-//# sourceMappingURL=206.d508f3c8.chunk.js.map
