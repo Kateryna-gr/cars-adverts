@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/cars-adverts/static/css/main.cd2e038f.css",
-    "main.js": "/cars-adverts/static/js/main.74dc890a.js",
+    "main.js": "/cars-adverts/static/js/main.380746ae.js",
     "static/js/983.616847db.chunk.js": "/cars-adverts/static/js/983.616847db.chunk.js",
-    "static/js/69.b4202fbe.chunk.js": "/cars-adverts/static/js/69.b4202fbe.chunk.js",
-    "static/js/697.fc82829b.chunk.js": "/cars-adverts/static/js/697.fc82829b.chunk.js",
-    "static/js/728.1246a8a9.chunk.js": "/cars-adverts/static/js/728.1246a8a9.chunk.js",
+    "static/js/69.d8924774.chunk.js": "/cars-adverts/static/js/69.d8924774.chunk.js",
+    "static/js/697.b103aa9b.chunk.js": "/cars-adverts/static/js/697.b103aa9b.chunk.js",
+    "static/js/632.06a95bd9.chunk.js": "/cars-adverts/static/js/632.06a95bd9.chunk.js",
+    "static/js/683.0af394f6.chunk.js": "/cars-adverts/static/js/683.0af394f6.chunk.js",
     "static/media/sprite.svg": "/cars-adverts/static/media/sprite.e675e55e085115d17e17898dafd51ae0.svg",
     "index.html": "/cars-adverts/index.html",
     "main.cd2e038f.css.map": "/cars-adverts/static/css/main.cd2e038f.css.map",
-    "main.74dc890a.js.map": "/cars-adverts/static/js/main.74dc890a.js.map",
+    "main.380746ae.js.map": "/cars-adverts/static/js/main.380746ae.js.map",
     "983.616847db.chunk.js.map": "/cars-adverts/static/js/983.616847db.chunk.js.map",
-    "69.b4202fbe.chunk.js.map": "/cars-adverts/static/js/69.b4202fbe.chunk.js.map",
-    "697.fc82829b.chunk.js.map": "/cars-adverts/static/js/697.fc82829b.chunk.js.map",
-    "728.1246a8a9.chunk.js.map": "/cars-adverts/static/js/728.1246a8a9.chunk.js.map"
+    "69.d8924774.chunk.js.map": "/cars-adverts/static/js/69.d8924774.chunk.js.map",
+    "697.b103aa9b.chunk.js.map": "/cars-adverts/static/js/697.b103aa9b.chunk.js.map",
+    "632.06a95bd9.chunk.js.map": "/cars-adverts/static/js/632.06a95bd9.chunk.js.map",
+    "683.0af394f6.chunk.js.map": "/cars-adverts/static/js/683.0af394f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.74dc890a.js"
+    "static/js/main.380746ae.js"
   ]
 }
