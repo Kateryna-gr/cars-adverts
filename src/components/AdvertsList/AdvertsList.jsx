@@ -29,7 +29,7 @@ const AdvertsList = ({ filterBrand }) => {
   //     dispatch(addToFav(id));
   //   } else dispatch(deleteFromFav(id));
   // };
-  console.log(filterBrand);
+  // console.log(filterBrand);
 
   return (
     <>

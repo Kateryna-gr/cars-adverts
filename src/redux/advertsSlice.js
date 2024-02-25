@@ -16,7 +16,6 @@ const advertsSlice = createSlice({
 
   reducers: {
     changeFilterBrand(state, { payload }) {
-      console.log(payload);
       state.filterBrand = payload;
     },
   },
@@ -43,7 +42,6 @@ const advertsSlice = createSlice({
         state.error = null;
         const { data, id } = payload;
         const car = data.find(car => car.id === id);
-        console.log(car);
         state.favorites.push(car);
       })
       .addCase(addToFav.rejected, (state, { payload }) => {

@@ -16,7 +16,6 @@ const AdvertsFavList = () => {
   const error = useSelector(selectError);
   //   const dispatch = useDispatch();
 
-  // console.log(favoritesCars);
   //   useEffect(() => {
   //     dispatch(addToFav());
   //   }, [dispatch]);

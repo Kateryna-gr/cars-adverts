@@ -39,7 +39,7 @@ const FilterBar = ({ setFilterBrand, onSelectChange }) => {
     <Formik
       initialValues={{ brand: '', price: '', mileageMin: '', mileageMax: '' }}
       onSubmit={(values, actions) => {
-        console.log(values);
+        // console.log(values);
         setFilterBrand(values.brand);
       }}
     >
